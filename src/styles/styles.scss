@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+$primary-color: #2c2d2a;
+$accent-color: #995000;
+$highlight-color: #fed7aa;
+
+$container-width: 300px;
+$price-width: 80px;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#app {
+  height: 100vh;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+  scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #60676d;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+img,
+svg {
+  -webkit-user-drag: none;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 120px;
+}
+
+h1,
+h2,
+h3,
+.price {
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  text-align: center;
+  display: block;
+  max-width: $container-width;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 4px;
+    font-size: 28px;
+    line-height: 33px;
+
+    span {
+      color: $accent-color;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .social {
+    gap: 8px;
+
+    svg {
+      fill: #5c5c5c;
+      transition: 0.5s ease;
+
+      &:hover {
+        fill: #797979;
+      }
+    }
+  }
+}
+
+section {
+  max-width: $container-width;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  h2 {
+    background-color: $highlight-color;
+    padding: 8px 16px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  ul li {
+    margin-bottom: 16px;
+    display: flex;
+
+    .details {
+      max-width: 220px;
+      width: 100%;
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.price {
+  text-align: end;
+  max-width: $price-width;
+  width: 100%;
+}
