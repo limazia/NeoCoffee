@@ -25,7 +25,7 @@ const myProducts: MenuCategory[] = [
 Para executar o NeoCoffee localmente em seu ambiente de desenvolvimento, siga os passos abaixo:
 
 ```bash
-clone o repositório para sua maquina
+git clone https://github.com/limazia/NeoCoffee.git
 npm i
 npm run dev
 ```
