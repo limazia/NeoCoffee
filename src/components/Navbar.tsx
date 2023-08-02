@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
 import { WhatsappLogo, InstagramLogo } from "@phosphor-icons/react";
 
 export function Navbar() {
   return (
     <div className="d-flex flex-column align-items-center justify-content-center mt-4 pb-3">
-      <Link to="/">
+      <a href="/">
         <h1>
           Neo<span>Coffee</span>
         </h1>
-      </Link>
+      </a>
       <small className="text-muted">Aberto diariamente das 8h às 22h</small>
 
       <div className="d-flex mt-2 social">

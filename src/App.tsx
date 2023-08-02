@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import { Card } from "@components/Card";
 import { Navbar } from "@components/Navbar";
-
 import { renderRows } from "@utils/renderRows";
 import { MenuCategory } from "@utils/interfaces";
 
@@ -11,19 +10,14 @@ const myProducts: MenuCategory[] = [
     category: "Bebidas",
     products: [
       {
-        name: "Suco de Laranja",
+        name: "Coca-Cola",
         price: 5.0,
-        description: "Suco natural de laranja.",
-      },
-      {
-        name: "Café Expresso",
-        price: 3.5,
-        description: "Café expresso bem quente.",
-      },
-      {
-        name: "Refrigerante",
-        price: 4.0,
         description: "Lata de refrigerante tradicional.",
+      },
+      {
+        name: "Suco de Laranja",
+        price: 7.0,
+        description: "Suco natural de laranja (300ml).",
       },
     ],
   },
@@ -32,28 +26,18 @@ const myProducts: MenuCategory[] = [
     products: [
       {
         name: "Hambúrguer",
-        price: 12.5,
+        price: 10.0,
         description: "Hambúrguer suculento com queijo e bacon.",
       },
       {
         name: "Sanduíche Vegetariano",
-        price: 10.0,
+        price: 15.0,
         description: "Sanduíche com alface, tomate e queijo.",
       },
       {
-        name: "Batata Frita",
-        price: 6.0,
-        description: "Porção de batata frita crocante.",
-      },
-      {
-        name: "Coxinha",
-        price: 3.0,
-        description: "Deliciosa coxinha de frango.",
-      },
-      {
-        name: "Pastel",
-        price: 5.0,
-        description: "Pastel de carne ou queijo.",
+        name: "X-Bacon",
+        price: 20.0,
+        description: "Delicioso x-bacon.",
       },
     ],
   },
@@ -69,7 +53,7 @@ const myProducts: MenuCategory[] = [
   },
 ];
 
-export function Home() {
+export function App() {
   return (
     <>
       <header>
@@ -80,7 +64,7 @@ export function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }} // Tempo de duração da animação em segundos
+          transition={{ duration: 0.5 }}
         >
           {renderRows({
             dataArray: myProducts,

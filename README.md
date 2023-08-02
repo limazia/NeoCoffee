@@ -1,7 +1,7 @@
 # NeoCoffee
 Sistema de cardapio simples feito com React e Typescript.
 
-![NeoCoffee](https://i.imgur.com/5grMQw0.png)
+![NeoCoffee Preview](https://i.imgur.com/4afATHR.png)
 
 Obrigado a [Rocketseat](https://www.rocketseat.com.br/)
 
